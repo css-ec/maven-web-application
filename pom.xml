@@ -98,14 +98,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://15.207.223.90:8081/repository/wallmart-release/</url>
+	      <name>Chethan Technologies Releases Nexus Repository</name>
+	      <url>http://13.126.77.38:8081/repository/amazon-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://15.207.223.90:8081/repository/wallmart-snapshot/</url>
+	      <name>Chethan Technologies Snapshot Nexus Repository </name>
+	      <url>http://13.126.77.38:8081/repository/amazon-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
