@@ -15,7 +15,7 @@ node ('master')
   
   stage("CheckOutCodeGit")
   {
-   git branch: 'development', credentialsId: '65fb834f-a83b-4fe7-8e11-686245c47a65', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+   git credentialsId: '488dd821-4e03-4d47-8327-9c2b05bf6ebb', url: 'https://github.com/css-ec/maven-web-application.git''
  }
  
  stage("Build")
@@ -23,7 +23,7 @@ node ('master')
  sh "${mavenHome}/bin/mvn clean package"
  }
  
-  /*
+
  stage("ExecuteSonarQubeReport")
  {
  sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -33,7 +33,7 @@ node ('master')
  {
  sh "${mavenHome}/bin/mvn deploy"
  }
- 
+ /*
   stage("DeployAppTomcat")
  {
   sshagent(['423b5b58-c0a3-42aa-af6e-f0affe1bad0c']) {
