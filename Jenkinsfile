@@ -2,7 +2,7 @@ node ('master')
  {
   
   def mavenHome = tool name: "maven3.6.2"
-  
+  /*
       echo "GitHub BranhName ${env.BRANCH_NAME}"
       echo "Jenkins Job Number ${env.BUILD_NUMBER}"
       echo "Jenkins Node Name ${env.NODE_NAME}"
@@ -12,7 +12,7 @@ node ('master')
       echo "JOB Name ${env.JOB_NAME}"
   
    properties([[$class: 'JiraProjectProperty'], buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '2', daysToKeepStr: '', numToKeepStr: '2')), pipelineTriggers([pollSCM('* * * * *')])])
-  
+  */
   stage("CheckOutCodeGit")
   {
    git credentialsId: '488dd821-4e03-4d47-8327-9c2b05bf6ebb', url: 'https://github.com/css-ec/maven-web-application.git'
